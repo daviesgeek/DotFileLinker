@@ -29,8 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   let ignoredFiles = [
     ".git": true,
     ".gitignore": true,
-    ".DS_Store": true,
-    "folder": true
+    ".DS_Store": true
   ]
 
   func applicationDidFinishLaunching(aNotification: NSNotification?) {
