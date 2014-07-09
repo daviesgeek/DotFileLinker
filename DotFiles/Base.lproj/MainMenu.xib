@@ -681,27 +681,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="403" height="189"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-9H-GoZ">
-                        <rect key="frame" x="14" y="141" width="126" height="32"/>
-                        <buttonCell key="cell" type="push" title="Source Path..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Ca-CY-oxz">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="selectFolder:" target="Voe-Tx-rLC" id="ZPO-o4-OTf"/>
-                        </connections>
-                    </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-3N-7W8">
                         <rect key="frame" x="18" y="113" width="367" height="27"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Label" drawsBackground="YES" id="fXR-zE-i1C">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Source Folder" drawsBackground="YES" id="fXR-zE-i1C">
                             <font key="font" metaFont="fixedUser" size="11"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sq-wk-Xm2">
-                        <rect key="frame" x="14" y="77" width="116" height="32"/>
-                        <buttonCell key="cell" type="push" title="Dest. Path..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="16B-zj-g8A">
+                        <rect key="frame" x="14" y="77" width="128" height="32"/>
+                        <buttonCell key="cell" type="push" title="Dest. Folder..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="16B-zj-g8A">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -709,6 +699,14 @@
                             <action selector="selectDest:" target="Voe-Tx-rLC" id="f0s-kR-l5L"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-n4-yWw">
+                        <rect key="frame" x="20" y="49" width="367" height="27"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Destination Folder" drawsBackground="YES" id="0Ik-yC-wKj">
+                            <font key="font" metaFont="fixedUser" size="11"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAE-sv-sVj">
                         <rect key="frame" x="152" y="13" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Link Files" bezelStyle="rounded" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sSU-VW-soi">
@@ -719,14 +717,16 @@
                             <action selector="symlinkFolder:" target="Voe-Tx-rLC" id="kKu-x9-8bh"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-n4-yWw">
-                        <rect key="frame" x="20" y="49" width="367" height="27"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Label" drawsBackground="YES" id="0Ik-yC-wKj">
-                            <font key="font" metaFont="fixedUser" size="11"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-9H-GoZ">
+                        <rect key="frame" x="14" y="141" width="139" height="32"/>
+                        <buttonCell key="cell" type="push" title="Source Folder..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Ca-CY-oxz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectFolder:" target="Voe-Tx-rLC" id="ZPO-o4-OTf"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="356.5" y="213.5"/>
