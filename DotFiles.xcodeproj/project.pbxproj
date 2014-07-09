@@ -397,6 +397,7 @@
 				8D76B376196C9B0D002125C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D76B377196C9B0D002125C7 /* Build configuration list for PBXNativeTarget "DotFilesTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +406,7 @@
 				8D76B379196C9B0D002125C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
