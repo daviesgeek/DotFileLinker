@@ -20,6 +20,7 @@
                 <outlet property="mainWindow" destination="QMf-GX-wDm" id="e2f-MH-OI1"/>
                 <outlet property="selectSource" destination="L9Q-9H-GoZ" id="Bej-bv-eL4"/>
                 <outlet property="sourcePath" destination="9Pb-3N-7W8" id="stG-2h-W2A"/>
+                <outlet property="window" destination="QMf-GX-wDm" id="7vs-hU-607"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -712,6 +713,9 @@
                         <buttonCell key="cell" type="push" title="Link Files" bezelStyle="rounded" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sSU-VW-soi">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                         </buttonCell>
                         <connections>
                             <action selector="symlinkFolder:" target="Voe-Tx-rLC" id="kKu-x9-8bh"/>
