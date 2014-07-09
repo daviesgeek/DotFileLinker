@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var sourceFolder: NSURL = NSURL()
   var destFolder = NSHomeDirectory()
   var manager: NSFileManager = NSFileManager()
-  var ignoredFiles = [
+  let ignoredFiles = [
     ".git": true,
     ".gitignore": true,
     ".DS_Store": true,
@@ -40,7 +40,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     destPath.stringValue = destFolder
     linkButton.enabled = false
     window.center()
-  
+    
+    
   }
 
   func applicationWillTerminate(aNotification: NSNotification?) {
