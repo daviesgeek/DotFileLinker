@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D76B357196C9B0D002125C7"
-               BuildableName = "DotFiles.app"
-               BlueprintName = "DotFiles"
+               BlueprintIdentifier = "8D0B14C7196F5AD3001B7B54"
+               BuildableName = "DotFilesLinker.app"
+               BlueprintName = "DotFilesLinker"
                ReferencedContainer = "container:DotFilesLinker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D76B369196C9B0D002125C7"
-               BuildableName = "DotFilesTests.xctest"
-               BlueprintName = "DotFilesTests"
+               BlueprintIdentifier = "8D0B14D9196F5AD3001B7B54"
+               BuildableName = "DotFilesLinkerTests.xctest"
+               BlueprintName = "DotFilesLinkerTests"
                ReferencedContainer = "container:DotFilesLinker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D76B357196C9B0D002125C7"
-            BuildableName = "DotFiles.app"
-            BlueprintName = "DotFiles"
+            BlueprintIdentifier = "8D0B14C7196F5AD3001B7B54"
+            BuildableName = "DotFilesLinker.app"
+            BlueprintName = "DotFilesLinker"
             ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,9 +61,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D76B357196C9B0D002125C7"
-            BuildableName = "DotFiles.app"
-            BlueprintName = "DotFiles"
+            BlueprintIdentifier = "8D0B14C7196F5AD3001B7B54"
+            BuildableName = "DotFilesLinker.app"
+            BlueprintName = "DotFilesLinker"
             ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -79,9 +79,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D76B357196C9B0D002125C7"
-            BuildableName = "DotFiles.app"
-            BlueprintName = "DotFiles"
+            BlueprintIdentifier = "8D0B14C7196F5AD3001B7B54"
+            BuildableName = "DotFilesLinker.app"
+            BlueprintName = "DotFilesLinker"
             ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

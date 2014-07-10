@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DotFiles
+//  DotFilesLinker
 //
 //  Created by Matthew Davies on 7/8/14.
 //  Copyright (c) 2014 Matthew Davies. All rights reserved.
@@ -8,6 +8,7 @@
 
 import Cocoa
 import AppKit
+import DotFiles
 
 class AppDelegate: NSObject, NSApplicationDelegate {
   
@@ -31,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     ".gitignore": true,
     ".DS_Store": true
   ]
-
+  
   func applicationDidFinishLaunching(aNotification: NSNotification?) {
     
     // Set up everything for displaying/hiding
@@ -39,8 +40,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     destPath.stringValue = destFolder
     linkButton.enabled = false
     window.center()
-    
-    
+
+    var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.ApplicationSupportDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+    var appSupport = paths[0].stringByAppendingPathComponent("DotFilesLinker")
   }
 
   func applicationWillTerminate(aNotification: NSNotification?) {

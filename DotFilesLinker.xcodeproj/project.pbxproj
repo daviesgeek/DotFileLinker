@@ -7,44 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D76B35E196C9B0D002125C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76B35D196C9B0D002125C7 /* main.swift */; };
-		8D76B360196C9B0D002125C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76B35F196C9B0D002125C7 /* AppDelegate.swift */; };
-		8D76B362196C9B0D002125C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D76B361196C9B0D002125C7 /* Images.xcassets */; };
-		8D76B365196C9B0D002125C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D76B363196C9B0D002125C7 /* MainMenu.xib */; };
-		8D76B371196C9B0D002125C7 /* DotFilesLinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D76B370196C9B0D002125C7 /* DotFilesLinkerTests.swift */; };
+		8D0B14CE196F5AD3001B7B54 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B14CD196F5AD3001B7B54 /* main.swift */; };
+		8D0B14D0196F5AD3001B7B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B14CF196F5AD3001B7B54 /* AppDelegate.swift */; };
+		8D0B14D2196F5AD3001B7B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B14D1196F5AD3001B7B54 /* Images.xcassets */; };
+		8D0B14D5196F5AD3001B7B54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B14D3196F5AD3001B7B54 /* MainMenu.xib */; };
+		8D0B14E1196F5AD3001B7B54 /* DotFilesLinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B14E0196F5AD3001B7B54 /* DotFilesLinkerTests.swift */; };
+		8DB1F6F7196F5DB800F9FE47 /* SnapshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1F6F6196F5DB800F9FE47 /* SnapshotManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8D76B36B196C9B0D002125C7 /* PBXContainerItemProxy */ = {
+		8D0B14DB196F5AD3001B7B54 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8D76B350196C9B0D002125C7 /* Project object */;
+			containerPortal = 8D0B14C0196F5AD3001B7B54 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D76B357196C9B0D002125C7;
-			remoteInfo = DotFiles;
+			remoteGlobalIDString = 8D0B14C7196F5AD3001B7B54;
+			remoteInfo = DotFilesLinker;
+		};
+		8DB1F6F4196F5D6C00F9FE47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D0B14C0196F5AD3001B7B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0B14C7196F5AD3001B7B54;
+			remoteInfo = DotFilesLinker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D76B358196C9B0D002125C7 /* DotFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D76B35C196C9B0D002125C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D76B35D196C9B0D002125C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		8D76B35F196C9B0D002125C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../DotFilesLinker/AppDelegate.swift; sourceTree = "<group>"; };
-		8D76B361196C9B0D002125C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../DotFilesLinker/Images.xcassets; sourceTree = "<group>"; };
-		8D76B364196C9B0D002125C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8D76B36A196C9B0D002125C7 /* DotFilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotFilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D76B36F196C9B0D002125C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D76B370196C9B0D002125C7 /* DotFilesLinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DotFilesLinkerTests.swift; path = ../DotFilesLinkerTests.swift/DotFilesLinkerTests.swift; sourceTree = "<group>"; };
+		8D0B14C8196F5AD3001B7B54 /* DotFilesLinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotFilesLinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0B14CC196F5AD3001B7B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0B14CD196F5AD3001B7B54 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8D0B14CF196F5AD3001B7B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D0B14D1196F5AD3001B7B54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8D0B14D4196F5AD3001B7B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8D0B14DA196F5AD3001B7B54 /* DotFilesLinkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotFilesLinkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0B14DF196F5AD3001B7B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0B14E0196F5AD3001B7B54 /* DotFilesLinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotFilesLinkerTests.swift; sourceTree = "<group>"; };
+		8DB1F6F6196F5DB800F9FE47 /* SnapshotManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D76B355196C9B0D002125C7 /* Frameworks */ = {
+		8D0B14C5196F5AD3001B7B54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D76B367196C9B0D002125C7 /* Frameworks */ = {
+		8D0B14D7196F5AD3001B7B54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,57 +63,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D76B34F196C9B0D002125C7 = {
+		8D0B14BF196F5AD3001B7B54 = {
 			isa = PBXGroup;
 			children = (
-				8D76B35A196C9B0D002125C7 /* DotFilesLinker */,
-				8D76B36D196C9B0D002125C7 /* DotFilesLinkerTests */,
-				8D76B359196C9B0D002125C7 /* Products */,
+				8D0B14CA196F5AD3001B7B54 /* DotFilesLinker */,
+				8D0B14DD196F5AD3001B7B54 /* DotFilesLinkerTests */,
+				8D0B14C9196F5AD3001B7B54 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8D76B359196C9B0D002125C7 /* Products */ = {
+		8D0B14C9196F5AD3001B7B54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D76B358196C9B0D002125C7 /* DotFiles.app */,
-				8D76B36A196C9B0D002125C7 /* DotFilesTests.xctest */,
+				8D0B14C8196F5AD3001B7B54 /* DotFilesLinker.app */,
+				8D0B14DA196F5AD3001B7B54 /* DotFilesLinkerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D76B35A196C9B0D002125C7 /* DotFilesLinker */ = {
+		8D0B14CA196F5AD3001B7B54 /* DotFilesLinker */ = {
 			isa = PBXGroup;
 			children = (
-				8D76B35F196C9B0D002125C7 /* AppDelegate.swift */,
-				8D76B361196C9B0D002125C7 /* Images.xcassets */,
-				8D76B363196C9B0D002125C7 /* MainMenu.xib */,
-				8D76B35B196C9B0D002125C7 /* Supporting Files */,
+				8D0B14CF196F5AD3001B7B54 /* AppDelegate.swift */,
+				8D0B14D1196F5AD3001B7B54 /* Images.xcassets */,
+				8D0B14D3196F5AD3001B7B54 /* MainMenu.xib */,
+				8D0B14CB196F5AD3001B7B54 /* Supporting Files */,
+				8DB1F6F6196F5DB800F9FE47 /* SnapshotManager.swift */,
 			);
 			path = DotFilesLinker;
 			sourceTree = "<group>";
 		};
-		8D76B35B196C9B0D002125C7 /* Supporting Files */ = {
+		8D0B14CB196F5AD3001B7B54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D76B35C196C9B0D002125C7 /* Info.plist */,
-				8D76B35D196C9B0D002125C7 /* main.swift */,
+				8D0B14CC196F5AD3001B7B54 /* Info.plist */,
+				8D0B14CD196F5AD3001B7B54 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8D76B36D196C9B0D002125C7 /* DotFilesLinkerTests */ = {
+		8D0B14DD196F5AD3001B7B54 /* DotFilesLinkerTests */ = {
 			isa = PBXGroup;
 			children = (
-				8D76B370196C9B0D002125C7 /* DotFilesLinkerTests.swift */,
-				8D76B36E196C9B0D002125C7 /* Supporting Files */,
+				8D0B14E0196F5AD3001B7B54 /* DotFilesLinkerTests.swift */,
+				8D0B14DE196F5AD3001B7B54 /* Supporting Files */,
 			);
 			path = DotFilesLinkerTests;
 			sourceTree = "<group>";
 		};
-		8D76B36E196C9B0D002125C7 /* Supporting Files */ = {
+		8D0B14DE196F5AD3001B7B54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D76B36F196C9B0D002125C7 /* Info.plist */,
+				8D0B14DF196F5AD3001B7B54 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,60 +122,61 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D76B357196C9B0D002125C7 /* DotFiles */ = {
+		8D0B14C7196F5AD3001B7B54 /* DotFilesLinker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D76B374196C9B0D002125C7 /* Build configuration list for PBXNativeTarget "DotFiles" */;
+			buildConfigurationList = 8D0B14E4196F5AD3001B7B54 /* Build configuration list for PBXNativeTarget "DotFilesLinker" */;
 			buildPhases = (
-				8D76B354196C9B0D002125C7 /* Sources */,
-				8D76B355196C9B0D002125C7 /* Frameworks */,
-				8D76B356196C9B0D002125C7 /* Resources */,
+				8D0B14C4196F5AD3001B7B54 /* Sources */,
+				8D0B14C5196F5AD3001B7B54 /* Frameworks */,
+				8D0B14C6196F5AD3001B7B54 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DotFiles;
-			productName = DotFiles;
-			productReference = 8D76B358196C9B0D002125C7 /* DotFiles.app */;
+			name = DotFilesLinker;
+			productName = DotFilesLinker;
+			productReference = 8D0B14C8196F5AD3001B7B54 /* DotFilesLinker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8D76B369196C9B0D002125C7 /* DotFilesTests */ = {
+		8D0B14D9196F5AD3001B7B54 /* DotFilesLinkerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D76B377196C9B0D002125C7 /* Build configuration list for PBXNativeTarget "DotFilesTests" */;
+			buildConfigurationList = 8D0B14E7196F5AD3001B7B54 /* Build configuration list for PBXNativeTarget "DotFilesLinkerTests" */;
 			buildPhases = (
-				8D76B366196C9B0D002125C7 /* Sources */,
-				8D76B367196C9B0D002125C7 /* Frameworks */,
-				8D76B368196C9B0D002125C7 /* Resources */,
+				8D0B14D6196F5AD3001B7B54 /* Sources */,
+				8D0B14D7196F5AD3001B7B54 /* Frameworks */,
+				8D0B14D8196F5AD3001B7B54 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8D76B36C196C9B0D002125C7 /* PBXTargetDependency */,
+				8D0B14DC196F5AD3001B7B54 /* PBXTargetDependency */,
+				8DB1F6F5196F5D6C00F9FE47 /* PBXTargetDependency */,
 			);
-			name = DotFilesTests;
-			productName = DotFilesTests;
-			productReference = 8D76B36A196C9B0D002125C7 /* DotFilesTests.xctest */;
+			name = DotFilesLinkerTests;
+			productName = DotFilesLinkerTests;
+			productReference = 8D0B14DA196F5AD3001B7B54 /* DotFilesLinkerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8D76B350196C9B0D002125C7 /* Project object */ = {
+		8D0B14C0196F5AD3001B7B54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Matthew Davies";
 				TargetAttributes = {
-					8D76B357196C9B0D002125C7 = {
+					8D0B14C7196F5AD3001B7B54 = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					8D76B369196C9B0D002125C7 = {
+					8D0B14D9196F5AD3001B7B54 = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 8D76B357196C9B0D002125C7;
+						TestTargetID = 8D0B14C7196F5AD3001B7B54;
 					};
 				};
 			};
-			buildConfigurationList = 8D76B353196C9B0D002125C7 /* Build configuration list for PBXProject "DotFilesLinker" */;
+			buildConfigurationList = 8D0B14C3196F5AD3001B7B54 /* Build configuration list for PBXProject "DotFilesLinker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,28 +184,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 8D76B34F196C9B0D002125C7;
-			productRefGroup = 8D76B359196C9B0D002125C7 /* Products */;
+			mainGroup = 8D0B14BF196F5AD3001B7B54;
+			productRefGroup = 8D0B14C9196F5AD3001B7B54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D76B357196C9B0D002125C7 /* DotFiles */,
-				8D76B369196C9B0D002125C7 /* DotFilesTests */,
+				8D0B14C7196F5AD3001B7B54 /* DotFilesLinker */,
+				8D0B14D9196F5AD3001B7B54 /* DotFilesLinkerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D76B356196C9B0D002125C7 /* Resources */ = {
+		8D0B14C6196F5AD3001B7B54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D76B362196C9B0D002125C7 /* Images.xcassets in Resources */,
-				8D76B365196C9B0D002125C7 /* MainMenu.xib in Resources */,
+				8D0B14D2196F5AD3001B7B54 /* Images.xcassets in Resources */,
+				8D0B14D5196F5AD3001B7B54 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D76B368196C9B0D002125C7 /* Resources */ = {
+		8D0B14D8196F5AD3001B7B54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,47 +215,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D76B354196C9B0D002125C7 /* Sources */ = {
+		8D0B14C4196F5AD3001B7B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D76B360196C9B0D002125C7 /* AppDelegate.swift in Sources */,
-				8D76B35E196C9B0D002125C7 /* main.swift in Sources */,
+				8DB1F6F7196F5DB800F9FE47 /* SnapshotManager.swift in Sources */,
+				8D0B14D0196F5AD3001B7B54 /* AppDelegate.swift in Sources */,
+				8D0B14CE196F5AD3001B7B54 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D76B366196C9B0D002125C7 /* Sources */ = {
+		8D0B14D6196F5AD3001B7B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D76B371196C9B0D002125C7 /* DotFilesLinkerTests.swift in Sources */,
+				8D0B14E1196F5AD3001B7B54 /* DotFilesLinkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8D76B36C196C9B0D002125C7 /* PBXTargetDependency */ = {
+		8D0B14DC196F5AD3001B7B54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8D76B357196C9B0D002125C7 /* DotFiles */;
-			targetProxy = 8D76B36B196C9B0D002125C7 /* PBXContainerItemProxy */;
+			target = 8D0B14C7196F5AD3001B7B54 /* DotFilesLinker */;
+			targetProxy = 8D0B14DB196F5AD3001B7B54 /* PBXContainerItemProxy */;
+		};
+		8DB1F6F5196F5D6C00F9FE47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0B14C7196F5AD3001B7B54 /* DotFilesLinker */;
+			targetProxy = 8DB1F6F4196F5D6C00F9FE47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8D76B363196C9B0D002125C7 /* MainMenu.xib */ = {
+		8D0B14D3196F5AD3001B7B54 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D76B364196C9B0D002125C7 /* Base */,
+				8D0B14D4196F5AD3001B7B54 /* Base */,
 			);
 			name = MainMenu.xib;
-			path = ../DotFilesLinker;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8D76B372196C9B0D002125C7 /* Debug */ = {
+		8D0B14E2196F5AD3001B7B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,6 +279,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -281,12 +298,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = DotFilesLinker;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		8D76B373196C9B0D002125C7 /* Release */ = {
+		8D0B14E3196F5AD3001B7B54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,6 +324,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -317,36 +336,41 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = DotFilesLinker;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		8D76B375196C9B0D002125C7 /* Debug */ = {
+		8D0B14E5196F5AD3001B7B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/DotFilesLinker/Info.plist";
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = DotFilesLinker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_MODULE_NAME = DotFilesLinker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		8D76B376196C9B0D002125C7 /* Release */ = {
+		8D0B14E6196F5AD3001B7B54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/DotFilesLinker/Info.plist";
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = DotFilesLinker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_MODULE_NAME = DotFilesLinker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		8D76B378196C9B0D002125C7 /* Debug */ = {
+		8D0B14E8196F5AD3001B7B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DotFiles.app/Contents/MacOS/DotFiles";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DotFilesLinker.app/Contents/MacOS/DotFilesLinker";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -356,23 +380,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DotFilesTests/Info.plist;
+				INFOPLIST_FILE = DotFilesLinkerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
-		8D76B379196C9B0D002125C7 /* Release */ = {
+		8D0B14E9196F5AD3001B7B54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DotFiles.app/Contents/MacOS/DotFiles";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DotFilesLinker.app/Contents/MacOS/DotFilesLinker";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = DotFilesTests/Info.plist;
+				INFOPLIST_FILE = DotFilesLinkerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -382,34 +406,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D76B353196C9B0D002125C7 /* Build configuration list for PBXProject "DotFilesLinker" */ = {
+		8D0B14C3196F5AD3001B7B54 /* Build configuration list for PBXProject "DotFilesLinker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D76B372196C9B0D002125C7 /* Debug */,
-				8D76B373196C9B0D002125C7 /* Release */,
+				8D0B14E2196F5AD3001B7B54 /* Debug */,
+				8D0B14E3196F5AD3001B7B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D76B374196C9B0D002125C7 /* Build configuration list for PBXNativeTarget "DotFiles" */ = {
+		8D0B14E4196F5AD3001B7B54 /* Build configuration list for PBXNativeTarget "DotFilesLinker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D76B375196C9B0D002125C7 /* Debug */,
-				8D76B376196C9B0D002125C7 /* Release */,
+				8D0B14E5196F5AD3001B7B54 /* Debug */,
+				8D0B14E6196F5AD3001B7B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D76B377196C9B0D002125C7 /* Build configuration list for PBXNativeTarget "DotFilesTests" */ = {
+		8D0B14E7196F5AD3001B7B54 /* Build configuration list for PBXNativeTarget "DotFilesLinkerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D76B378196C9B0D002125C7 /* Debug */,
-				8D76B379196C9B0D002125C7 /* Release */,
+				8D0B14E8196F5AD3001B7B54 /* Debug */,
+				8D0B14E9196F5AD3001B7B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8D76B350196C9B0D002125C7 /* Project object */;
+	rootObject = 8D0B14C0196F5AD3001B7B54 /* Project object */;
 }
