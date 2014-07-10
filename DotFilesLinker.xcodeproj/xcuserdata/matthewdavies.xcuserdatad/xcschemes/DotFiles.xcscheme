@@ -17,7 +17,7 @@
                BlueprintIdentifier = "8D76B357196C9B0D002125C7"
                BuildableName = "DotFiles.app"
                BlueprintName = "DotFiles"
-               ReferencedContainer = "container:DotFiles.xcodeproj">
+               ReferencedContainer = "container:DotFilesLinker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "8D76B369196C9B0D002125C7"
                BuildableName = "DotFilesTests.xctest"
                BlueprintName = "DotFilesTests"
-               ReferencedContainer = "container:DotFiles.xcodeproj">
+               ReferencedContainer = "container:DotFilesLinker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "8D76B357196C9B0D002125C7"
             BuildableName = "DotFiles.app"
             BlueprintName = "DotFiles"
-            ReferencedContainer = "container:DotFiles.xcodeproj">
+            ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "8D76B357196C9B0D002125C7"
             BuildableName = "DotFiles.app"
             BlueprintName = "DotFiles"
-            ReferencedContainer = "container:DotFiles.xcodeproj">
+            ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "8D76B357196C9B0D002125C7"
             BuildableName = "DotFiles.app"
             BlueprintName = "DotFiles"
-            ReferencedContainer = "container:DotFiles.xcodeproj">
+            ReferencedContainer = "container:DotFilesLinker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
