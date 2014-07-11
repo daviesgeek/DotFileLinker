@@ -11,7 +11,7 @@ import Foundation
 class SnapshotManager {
   
   func saveSnapshot(snapshot: NSDictionary) -> Bool {
-
+    println(snapshot)
     // Take the snapshot, parse it as necessary
     
     // Open a new JSON file

@@ -20,6 +20,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBOutlet var sourcePath: NSTextField
   @IBOutlet var destPath: NSTextField
+  
+  @IBOutlet var errorLabel: NSTextField
+  @IBOutlet var errorList: NSScrollView
+
+  var errorListText: NSTextView {
+    get {
+      return errorList.contentView.documentView as NSTextView
+    }
+  }
 
   @IBOutlet var linkButton: NSButton
   @IBOutlet var disclosureTriangle: NSButton
@@ -40,10 +49,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // Set up everything for displaying/hiding
     sourcePath.hidden = true
     disclosureTriangle.hidden = true
+    errorLabel.hidden = true
+    errorList.hidden = true
     destPath.stringValue = destFolder
     linkButton.enabled = false
     window.center()
-            
+    
+    resizeWindow(window, ["height": 205.00], animate: false)
+    
     var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.ApplicationSupportDirectory, NSSearchPathDomainMask.UserDomainMask, true)
     var appSupport = paths[0].stringByAppendingPathComponent("DotFilesLinker")
     
@@ -82,6 +95,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   // Symlink the files
   @IBAction func symlinkFolder(sender: AnyObject) {
     var error: NSError?
+    var errors = [String]()
     var files = []
     var snapshot = Dictionary<String, String>()
     files = fileManager.contentsOfDirectoryAtURL(sourceFolder, includingPropertiesForKeys: nil, options:nil, error:nil)
@@ -96,15 +110,40 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       let linked = fileManager.createSymbolicLinkAtPath(destination, withDestinationPath: filePath, error: &error)
       if !linked {
         if let err = error{
-          println(err.localizedDescription)
+          errors.append(err.localizedDescription)
         }
       } else {
         snapshot[filePath] = destination
       }
     }
+    
+    if(!errors.isEmpty) {
+      disclosureTriangle.hidden = false
+      errorLabel.stringValue = "There were \(errors.count) error(s)"
+      errorLabel.hidden = false
+      var errorListString = ""
+      for error in errors {
+        errorListString += error + "\n"
+      }
+      errorListText.string = errorListString
+      resizeWindow(window, ["height": 255.00])
+    }
+
     if snapshot.count > 0 {
       snapshotManager.saveSnapshot(snapshot)
     }
+  
   }
   
+  
+  @IBAction func showErrors(sender: NSButton) {
+    if sender.state == 1 {
+      resizeWindow(window, ["height": 400])
+      errorList.hidden = false
+    } else if sender.state == 0 {
+      resizeWindow(window, ["height": 255])
+      errorList.hidden = true
+    }
+    
+  }
 }
