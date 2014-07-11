@@ -8,7 +8,6 @@
 
 import Cocoa
 import AppKit
-import DotFiles
 
 class AppDelegate: NSObject, NSApplicationDelegate {
   
