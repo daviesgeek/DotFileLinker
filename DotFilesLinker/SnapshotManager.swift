@@ -10,7 +10,14 @@ import Foundation
 
 class SnapshotManager {
   
-  func test() -> String {
-    return "hello, world"
+  func saveSnapshot(snapshot: NSDictionary) -> Bool {
+
+    // Take the snapshot, parse it as necessary
+    
+    // Open a new JSON file
+    // Save the snapshot with the current date/time stamp
+    
+    return true
   }
+  
 }
