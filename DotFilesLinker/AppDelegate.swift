@@ -22,27 +22,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @IBOutlet var destPath: NSTextField
 
   @IBOutlet var linkButton: NSButton
+  @IBOutlet var disclosureTriangle: NSButton
 
   // Initialize all the global stuff
   var sourceFolder: NSURL = NSURL()
   var destFolder = NSHomeDirectory()
-  var manager: NSFileManager = NSFileManager()
+  var fileManager: NSFileManager = NSFileManager()
   let ignoredFiles = [
     ".git": true,
     ".gitignore": true,
     ".DS_Store": true
   ]
+  var snapshotManager = SnapshotManager()
   
   func applicationDidFinishLaunching(aNotification: NSNotification?) {
     
     // Set up everything for displaying/hiding
     sourcePath.hidden = true
+    disclosureTriangle.hidden = true
     destPath.stringValue = destFolder
     linkButton.enabled = false
     window.center()
-
+            
     var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.ApplicationSupportDirectory, NSSearchPathDomainMask.UserDomainMask, true)
     var appSupport = paths[0].stringByAppendingPathComponent("DotFilesLinker")
+    
   }
 
   func applicationWillTerminate(aNotification: NSNotification?) {
@@ -57,7 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if(selector.runModal() == NSOKButton) {
       sourceFolder = selector.URLs[0] as NSURL
       sourcePath.stringValue = sourceFolder.path
-      if(manager.fileExistsAtPath(sourceFolder.path) == true) {
+      if(fileManager.fileExistsAtPath(sourceFolder.path) == true) {
         sourcePath.hidden = false
         linkButton.enabled = true
       }
@@ -77,9 +81,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   // Symlink the files
   @IBAction func symlinkFolder(sender: AnyObject) {
-    var error : NSError?
+    var error: NSError?
     var files = []
-    files = manager.contentsOfDirectoryAtURL(sourceFolder, includingPropertiesForKeys: nil, options:nil, error:nil)
+    var snapshot = Dictionary<String, String>()
+    files = fileManager.contentsOfDirectoryAtURL(sourceFolder, includingPropertiesForKeys: nil, options:nil, error:nil)
     for file in files {
       var filePath: String = file.path
       if ignoredFiles[filePath.lastPathComponent] == true {
@@ -88,13 +93,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       var destination = destFolder + "/" + filePath.lastPathComponent
       println(filePath)
       println(destination)
-      let linked = manager.createSymbolicLinkAtPath(destination, withDestinationPath: filePath, error: &error)
-      if !linked{
+      let linked = fileManager.createSymbolicLinkAtPath(destination, withDestinationPath: filePath, error: &error)
+      if !linked {
         if let err = error{
           println(err.localizedDescription)
         }
+      } else {
+        snapshot[filePath] = destination
       }
     }
+    if snapshot.count > 0 {
+      snapshotManager.saveSnapshot(snapshot)
+    }
   }
-
+  
 }

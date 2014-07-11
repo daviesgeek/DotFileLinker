@@ -16,6 +16,7 @@
                 <outlet property="button" destination="L9Q-9H-GoZ" id="ZcG-Rw-Fe2"/>
                 <outlet property="destButton" destination="6sq-wk-Xm2" id="TbG-um-glt"/>
                 <outlet property="destPath" destination="zpx-n4-yWw" id="6it-ek-Ofq"/>
+                <outlet property="disclosureTriangle" destination="msX-Ja-cNu" id="dAo-BS-70z"/>
                 <outlet property="linkButton" destination="zAE-sv-sVj" id="OY7-Iw-lCm"/>
                 <outlet property="mainWindow" destination="QMf-GX-wDm" id="e2f-MH-OI1"/>
                 <outlet property="selectSource" destination="L9Q-9H-GoZ" id="Bej-bv-eL4"/>
@@ -676,14 +677,14 @@
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QMf-GX-wDm">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="131" y="159" width="403" height="189"/>
+            <rect key="contentRect" x="131" y="159" width="403" height="231"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="ir8-l8-1FF">
-                <rect key="frame" x="0.0" y="0.0" width="403" height="189"/>
+                <rect key="frame" x="0.0" y="0.0" width="403" height="231"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-3N-7W8">
-                        <rect key="frame" x="18" y="113" width="367" height="27"/>
+                        <rect key="frame" x="18" y="155" width="367" height="27"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Source Folder" drawsBackground="YES" id="fXR-zE-i1C">
                             <font key="font" metaFont="fixedUser" size="11"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -691,7 +692,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sq-wk-Xm2">
-                        <rect key="frame" x="14" y="77" width="128" height="32"/>
+                        <rect key="frame" x="14" y="119" width="128" height="32"/>
                         <buttonCell key="cell" type="push" title="Dest. Folder..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="16B-zj-g8A">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -701,7 +702,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-n4-yWw">
-                        <rect key="frame" x="20" y="49" width="367" height="27"/>
+                        <rect key="frame" x="20" y="91" width="367" height="27"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Destination Folder" drawsBackground="YES" id="0Ik-yC-wKj">
                             <font key="font" metaFont="fixedUser" size="11"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -709,7 +710,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAE-sv-sVj">
-                        <rect key="frame" x="152" y="13" width="98" height="32"/>
+                        <rect key="frame" x="152" y="55" width="98" height="32"/>
                         <buttonCell key="cell" type="push" title="Link Files" bezelStyle="rounded" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sSU-VW-soi">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -722,7 +723,7 @@ DQ
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9Q-9H-GoZ">
-                        <rect key="frame" x="14" y="141" width="139" height="32"/>
+                        <rect key="frame" x="14" y="183" width="139" height="32"/>
                         <buttonCell key="cell" type="push" title="Source Folder..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Ca-CY-oxz">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -731,9 +732,16 @@ DQ
                             <action selector="selectFolder:" target="Voe-Tx-rLC" id="ZPO-o4-OTf"/>
                         </connections>
                     </button>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msX-Ja-cNu">
+                        <rect key="frame" x="20" y="20" width="13" height="13"/>
+                        <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vqq-gr-O2J">
+                            <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="356.5" y="213.5"/>
+            <point key="canvasLocation" x="356.5" y="234.5"/>
         </window>
     </objects>
 </document>
