@@ -108,12 +108,12 @@
 		8D0B14CA196F5AD3001B7B54 /* DotFilesLinker */ = {
 			isa = PBXGroup;
 			children = (
-				8DB1F6F8196F67D300F9FE47 /* Helpers.swift */,
 				8D0B14CF196F5AD3001B7B54 /* AppDelegate.swift */,
 				8D0B14D1196F5AD3001B7B54 /* Images.xcassets */,
 				8D0B14D3196F5AD3001B7B54 /* MainMenu.xib */,
 				8D0B14CB196F5AD3001B7B54 /* Supporting Files */,
 				8DB1F6F6196F5DB800F9FE47 /* SnapshotManager.swift */,
+				8DB1F6F8196F67D300F9FE47 /* Helpers.swift */,
 				8D17290B196FB72600364581 /* DotFilesLinker-Bridging-Header.h */,
 			);
 			path = DotFilesLinker;

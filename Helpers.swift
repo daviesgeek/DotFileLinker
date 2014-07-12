@@ -11,7 +11,7 @@ import Cocoa
 
 
 /**
- * Resizes a window
+ * Resizes an NSWindow
  * @param {NSWindow} window - the window to manipulate
  * @param {String: CGFloat} options - a dictionary of the width and height as CGFloats
  * @param {Bool} animate - whether the window resizing should be animated (default: true)
@@ -34,4 +34,19 @@ func resizeWindow(window: NSWindow, options: [String: CGFloat], animate: Bool = 
 
   // Set the frame using the CGRect
   window.setFrame(frame, display: true, animate: animate)
+}
+
+/**
+ * Returns the Application Support folder for this application
+ * @return {String}
+ */
+func getAppSupportFolder(appendPath: String = "") -> String {
+  var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.ApplicationSupportDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+  var fileManager = NSFileManager()
+  var pathString:String = paths[0].stringByAppendingPathComponent("DotFilesLinker")
+  
+  if (fileManager.fileExistsAtPath(pathString)) {
+    fileManager.createDirectoryAtPath(pathString, withIntermediateDirectories: true, attributes: nil, error: nil)
+  }
+  return pathString
 }

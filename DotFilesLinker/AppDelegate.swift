@@ -55,10 +55,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.center()
     
     resizeWindow(window, ["height": 205.00], animate: false)
-    
-    var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.ApplicationSupportDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-    var appSupport = paths[0].stringByAppendingPathComponent("DotFilesLinker")
-    
   }
 
   func applicationWillTerminate(aNotification: NSNotification?) {
@@ -129,7 +125,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     if snapshot.count > 0 {
-      snapshotManager.saveSnapshot(snapshot)
+       snapshotManager.saveSnapshot(snapshot)
     }
   
   }
