@@ -66,7 +66,7 @@
 		8D0B14E0196F5AD3001B7B54 /* DotFilesLinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotFilesLinkerTests.swift; sourceTree = "<group>"; };
 		8D17290B196FB72600364581 /* DotFilesLinker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DotFilesLinker-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DB1F6F6196F5DB800F9FE47 /* SnapshotManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotManager.swift; sourceTree = "<group>"; };
-		8DB1F6F8196F67D300F9FE47 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = ../Helpers.swift; sourceTree = "<group>"; };
+		8DB1F6F8196F67D300F9FE47 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
